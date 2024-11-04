@@ -17,42 +17,81 @@
 
 
     <div class="content-wrapper">
-        <nav>
+        <!-- <nav>
             <div class="nav-container">
                 <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                     SALIM
                 </div>
                 <div class="links">
                     <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
-                            href="#">Home</a>
+                            href="http://127.0.0.1:5501/">Home</a>
                     </div>
                     <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
                             href="http://127.0.0.1:5501/#about">About</a></div>
                     <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
-                            href="#">Skills</a></div>
+                            href="http://127.0.0.1:5501/#skills">Skills</a></div>
                     <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
-                            href="">Services</a></div>
+                            href="http://127.0.0.1:5501/#education">Education</a></div>
+
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="http://127.0.0.1:5501/#project">Projects</a></div>
                     <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
                             href="http://127.0.0.1:5501/#contact">Contact</a></div>
 
                 </div>
 
-                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
             </div>
-            <div class="dropdown">
-                <div class="links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Service</a>
-                    <a href="#">Contact</a>
+        </nav> -->
 
-                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold text-white" href="http://127.0.0.1:5501/" data-aos="zoom-in" data-aos-duration="1500">
+                    Salim
+                </a>
+        
+                <!-- Toggle Button for Mobile View -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fw-bold">
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                            <a class="nav-link px-3" href="http://127.0.0.1:5501/">Home</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                            <a class="nav-link px-3" href="http://127.0.0.1:5501/#about">About</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                            <a class="nav-link px-3" href="http://127.0.0.1:5501/#skills">Skills</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                            <a class="nav-link px-3" href="http://127.0.0.1:5501/#education">Education</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                            <a class="nav-link px-3" href="http://127.0.0.1:5501/#project">Projects</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                            <a class="nav-link px-3" href="http://127.0.0.1:5501/#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                        <a href="https://drive.google.com/file/d/1fgVSUeuJkNk8WfcupL0OKuctV53ouFRl/view?usp=sharing"
+                            download class="download-btn">
+                            <span>Resume</span>
+                            <i class="fa fa-download"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
-        <section>
-            <div class="main-container">
+        
+        
+        <!-- hero section -->
+        <!-- <section>
+            <div class="main-container my-5">
                 <div class="content">
                     <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>SALIM</span>
                     </h1>
@@ -63,20 +102,7 @@
                         excepturi
                         nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem necessitatibus
                         tempora.</p>
-                    <!-- <div class="social-links">
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
-                </div> -->
-                    <!-- <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <button>Hire me</button>
-                </div> -->
-                    <!-- <div class="my-3" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <a href="" download class="download-btn">
-                        <span>Hire me</span>
-                      </a>
-                </div> -->
+
                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                         <a href="https://drive.google.com/file/d/1fgVSUeuJkNk8WfcupL0OKuctV53ouFRl/view?usp=sharing"
                             download class="download-btn" data-aos="fade-up">
@@ -91,38 +117,57 @@
 
             </div>
 
+        </section> -->
+
+         <!-- Hero Section -->
+        <section class="hero-section bg-black text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Content Column -->
+                    <div class="col-lg-6 col-md-12 content text-center text-lg-start">
+                        <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey, I'm <span>SALIM</span></h1>
+                        
+                        <!-- Typewriter Effect -->
+                        <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                            I'm a <span class="typewriter-text"></span><label for="">|</label>
+                        </div>
+                        
+                        <!-- Description Text -->
+                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100" class="my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quasi commodi quia rerum, iste corporis expedita in excepturi nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem necessitatibus tempora.
+                        </p>
+                        
+                        <!-- hire me Button -->
+                        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                            <a href="mailto:your-email@example.com" class="btn btn-hire-me d-flex align-items-center justify-content-center gap-1">
+                                <span>Hire Me</span>
+                                <i class="fa fa-briefcase"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0" data-aos="zoom-out" data-aos-duration="3000">
+                        <img src="image/salim.png" alt="Salim's photo" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
         </section>
+
+
+
 
 
         <!-- about section -->
         <div id="about">
-            <div class="about-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="about-container my-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                 <div class="container about-section mt-5">
                     <div class="row ">
                         <!-- Left Column: Text Content -->
                         <div class="col-md-6 image-container">
                             <img src="image/about.png" alt="Image" class="img-fluid rounded">
-                            <h5 class="text-white">Connect with me:</h5>
-                            <div class="social-icons">
-                                <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/yourusername" target="_blank"
-                                    class="social-icon"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://wa.me/yourphonenumber" target="_blank" class="social-icon"><i
-                                        class="fab fa-whatsapp"></i></a>
-                            </div>
+                            
                         </div>
-                        <!-- <div class="col-md-6 about-content">
-                <h2>About Me</h2>
-                <p>Hello! I’m <strong>[Your Name]</strong>, a passionate <strong>[Your Profession]</strong> with expertise in [mention relevant skills]. I love bringing creative solutions to life, ensuring functionality and style blend seamlessly.</p>
-                <p>I’ve worked on projects including [mention types of projects, e.g., responsive web designs and data-driven applications], striving to make each one both visually engaging and technically robust.</p>
-                <h3>Expertise</h3>
-                <p>My skills span a range of technologies:</p>
-                <h3>Frontend</h3><p>HTML5, CSS3,Bootstrap 5,JavaScript</p>
-                <h3>Backend</h3><p>Python, Django,Django Rest Framework</p>
-                <h3>Tools</h3><p>VS Code, Git, GitHub, Render, Vercel</p>
-                <p>some icon here github, linked in whats up</p>  
-            </div> -->
                         <div class="col-md-6 about-content">
                             <h2>About Me</h2>
                             <p>Hello! I’m <strong>[Your Name]</strong>, a passionate <strong>[Your Profession]</strong>
@@ -137,13 +182,21 @@
                                 one
                                 both visually engaging and technically robust.</p>
 
-                            <h3>Expertise</h3>
+                            <!-- <h3>Expertise</h3>
                             <p>My skills span a range of technologies:</p>
 
                             <h4>Frontend:<small>HTML5, CSS3, Bootstrap 5, JavaScript</small></h4>
                             <h4>Backend:<small>Python, Django, Django Rest Framework</small></h4>
-                            <h4>Tools:<small>VS Code, Git, GitHub, Render, Vercel</small></h4>
-
+                            <h4>Tools:<small>VS Code, Git, GitHub, Render, Vercel</small></h4> -->
+                            <h5 class="text-white">Connect with me:</h5>
+                            <div class="social-icons">
+                                <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/yourusername" target="_blank"
+                                    class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://wa.me/yourphonenumber" target="_blank" class="social-icon"><i
+                                        class="fab fa-whatsapp"></i></a>
+                            </div>
                             <div class="my-3">
                                 <a href="https://drive.google.com/file/d/1fgVSUeuJkNk8WfcupL0OKuctV53ouFRl/view?usp=sharing"
                                     download class="download-btn">
@@ -160,6 +213,192 @@
                 </div>
             </div>
         </div>
+
+        <!-- skills section start -->
+        
+        <div id="skills" class="skill-sec">
+            <div class="skills-section container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+              <h2>Skills</h2>
+              <div class="row">
+                
+                <!-- Column 1 -->
+                <div class="col-md-6">
+                  <!-- Skill 1: HTML -->
+                  <div class="skill-item">
+                    <span class="skill-title">HTML</span>
+                    <p class="skill-description">Building structured, semantic web pages with HTML5, following best practices for accessibility and SEO.</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Skill 2: CSS -->
+                  <div class="skill-item">
+                    <span class="skill-title">CSS</span>
+                    <p class="skill-description">Designing responsive, visually appealing layouts using CSS3, with experience in Flexbox, Grid, and animations.</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                  </div>
+        
+                  <!-- Skill 3: Bootstrap -->
+                  <div class="skill-item">
+                    <span class="skill-title">Bootstrap</span>
+                    <p class="skill-description">Creating responsive, mobile-first interfaces quickly using Bootstrap's grid system and components.</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="col-md-6">
+                  <!-- Skill 4: JavaScript -->
+                  <div class="skill-item">
+                    <span class="skill-title">JavaScript</span>
+                    <p class="skill-description">Developing dynamic, interactive websites with JavaScript, including ES6+, async programming, and DOM manipulation.</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                  </div>
+        
+                  <!-- Skill 5: Python -->
+                  <div class="skill-item">
+                    <span class="skill-title">Python</span>
+                    <p class="skill-description">Experienced in Python for data analysis, automation, and backend development with strong understanding of core concepts.</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                  </div>
+        
+                  <!-- Skill 6: Django REST Framework -->
+                  <div class="skill-item">
+                    <span class="skill-title">Django REST Framework</span>
+                    <p class="skill-description">Building RESTful APIs with Django REST Framework, including authentication, serialization, and efficient data handling.</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+        <!-- skills section end -->
+
+
+        <!-- education section start -->
+         <div id="education">
+          <div class="container education-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <h2>Education</h2>
+            <div class="row g-4">
+        
+              <!-- Card 1 -->
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <!-- <i class="fas fa-graduation-cap education-icon"></i> -->
+                    <i class="fas fa-briefcase education-icon"></i>
+                    <h5 class="card-title">Master of Business Administration (MBA)</h5>
+                    <p class="institution">Dhaka College</p>
+                    <p class="date">2020 - 2021</p>
+                    <p class="card-text">Focused on leadership, strategic management, and advanced financial planning to drive business growth and innovation.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 2 -->
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-chart-line education-icon"></i>
+                    <h5 class="card-title">Bachelor of Business Administration (BBA)</h5>
+                    <p class="institution">Dhaka College</p>
+                    <p class="date">2015 - 2019</p>
+                    <p class="card-text">Studied core business concepts including marketing, finance, and organizational behavior to build a foundation in business.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 3 -->
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-certificate education-icon"></i>
+                    <h5 class="card-title">Certified Backend Developer</h5>
+                    <p class="institution">CSE Fundamentals with phitron</p>
+                    <p class="date">Completed in 2024</p>
+                    <p class="card-text">Gained a strong foundation in computer science with a focus on software development, data structures, and algorithms.</p>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- education section end -->
+
+
+
+
+
+
+        <!-- project sec start -->
+        <div id="project">
+        <div class="container projects-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <h2>My Recent Projects</h2>
+            <div class="row g-4">
+        
+              <!-- Project Card 1 -->
+              <div class="col-md-4">
+                <div class="project-card">
+                  <img src="image/project1.JPG" alt="Project 1" class="project-image">
+                  <div class="card-body">
+                    <h5 class="project-title">ImmunoHub</h5>
+                    <p class="project-description">A comprehensive platform for scheduling, managing vaccine inventory, and monitoring patient feedback to ensure a streamlined vaccination process.</p>
+                    <p class="project-tech"><strong>Technologies Used:</strong> Django, Django REST Framework, Bootstrap, JavaScript, PostgreSQL</p>
+                    <a href="#" class="view-button"><i class="fas fa-eye"></i> View Details</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Project Card 2 -->
+              <div class="col-md-4">
+                <div class="project-card">
+                  <img src="image/project2.JPG" alt="Project 3" class="project-image">
+                  <div class="card-body">
+                    <h5 class="project-title">QuickDrop</h5>
+                    <p class="project-description">A user-friendly food ordering and delivery app featuring a categorized menu, real-time tracking, and secure payment integration.</p>
+                    <p class="project-tech"><strong class="tech">Technologies Used:</strong> Django, Django REST Framework, Bootstrap, JavaScript, PostgreSQL</p>
+                    <a href="#" class="view-button"><i class="fas fa-eye"></i> View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 3 -->
+             
+              <div class="col-md-4">
+                <div class="project-card">
+                  <img src="image/projetc3.JPG" alt="Project 2" class="project-image">
+                  <div class="card-body">
+                    <h5 class="project-title">Portfolio Website</h5>
+                    <p class="project-description">A professional portfolio website showcasing my skills, experience, and projects with a clean and responsive design.</p>
+                    <p class="project-tech"><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+                    <a href="#" class="view-button"><i class="fas fa-eye"></i> View live</a>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+        <!-- project sec start -->
+
+
+
 
         <!-- Contact Start -->
 
@@ -261,25 +500,18 @@
         <!-- Contact End -->
 
     </div>
+
+
+
+
     <!-- footer start -->
 
     <div class="footer-container">
         <div class="container text-center">
             <p class="footer-title">Developed by Salim</p>
             <small class="footer-copyright ">© 2024, All Rights Reserved</small>
-            <div class="footer-social mt-3">
-                <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/yourusername" target="_blank" class="social-icon"><i
-                        class="fab fa-twitter"></i></a>
-            </div>
         </div>
     </div>
-
-
-   
 
     <!-- footer end -->
 
