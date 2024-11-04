@@ -8,7 +8,6 @@
 }
 /* bootstrap navber */
 
-/* Navbar Base Styling */
 .navbar {
     background-color: black;
     padding: 0.8rem 0;
@@ -87,22 +86,6 @@ body{
     flex: 1;
 }
 
-/* @keyframes animate {
-    0%{
-        scale: 1;
-    }
-    
-    50%{
-        scale: 1.05;
-    }
-    
-    100%{
-        scale: 1;
-    }
-} */
-
-
-
 /* hero section bootstrap */
 
 
@@ -123,12 +106,12 @@ body{
 }
 
 .typewriter {
-    font-size: 1.5rem;  /* Default font size */
+    font-size: 1.5rem;  
     font-weight: bold;
     display: inline-block;
-    min-width: 180px;    /* Reserve space for the text */
-    white-space: nowrap; /* Prevents line breaks within the typewriter text */
-    overflow: hidden;    /* Ensures any overflow text doesn't affect layout */
+    min-width: 180px;    
+    white-space: nowrap; 
+    overflow: hidden;   
     text-align: left;
 }
 
@@ -218,29 +201,29 @@ body{
     line-height: 1.6;
 }
 .image-container img {
-    width: 80%; /* Decrease the width of the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%; 
+    height: auto; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .about-content p {
     font-size: 1rem;
-    color: #b6b5b5; /* Gray color for the text */
+    color: #b6b5b5; 
     line-height: 1.6;
     margin-bottom: 15px;
 }
 .social-icons {
-    margin-top: 20px; /* Space above icons */
+    margin-top: 20px; 
 }
 
 .social-icon {
-    margin-right: 15px; /* Space between icons */
-    color: #e08012; /* Icon color matching theme */
-    font-size: 1.5rem; /* Icon size */
-    transition: color 0.3s; /* Smooth color transition */
+    margin-right: 15px; 
+    color: #e08012; 
+    font-size: 1.5rem; 
+    transition: color 0.3s; 
 }
 .about-content h4 {
    
-    color: #fff; /* Customize color for headings */
+    color: #fff; 
 }
 
 .about-content small {
@@ -549,3 +532,24 @@ body{
 
 
 /* footer end */
+
+
+
+/* project detail */
+
+.project-btn{
+  background-color: #e08012;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 18px;
+
+}
+.project-btn:hover{
+  background-color: #e08012;
+  color: #fff;
+
+}
+.row.g-1 {
+  --bs-gutter-x: 0rem; /* Adjust to reduce or increase horizontal space */
+  --bs-gutter-y: 0.25rem; /* Adjust to reduce or increase vertical space */
+}
