@@ -87,7 +87,7 @@ body{
     flex: 1;
 }
 
-@keyframes animate {
+/* @keyframes animate {
     0%{
         scale: 1;
     }
@@ -99,7 +99,7 @@ body{
     100%{
         scale: 1;
     }
-}
+} */
 
 
 
@@ -129,6 +129,7 @@ body{
     min-width: 180px;    /* Reserve space for the text */
     white-space: nowrap; /* Prevents line breaks within the typewriter text */
     overflow: hidden;    /* Ensures any overflow text doesn't affect layout */
+    text-align: left;
 }
 
 /* Responsive text size for typewriter effect */
@@ -136,7 +137,8 @@ body{
     font-size: clamp(1rem, 2.5vw + 1rem, 2rem); /* Responsive scaling from mobile to desktop */
     font-weight: 500;
     display: inline;
-    vertical-align: bottom; /* Aligns the text smoothly with the cursor */
+    vertical-align: bottom; 
+    
 }
 
 .btn-hire-me {
@@ -406,10 +408,7 @@ body{
     transition: background-color 0.3s;
     margin-right: 8px;
   }
-  /* .view-button:hover {
-    background-color: #12e1d7;
-    color: #000;
-  } */
+ 
 /* project part end */
 
 
