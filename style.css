@@ -8,42 +8,71 @@
 }
 /* bootstrap navber */
 
-
+/* Navbar Base Styling */
 .navbar {
-    background-color: #000; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    padding: 0.8rem 0;
 }
 
 .navbar .navbar-brand {
     font-size: 1.5rem;
-    color: #ff8a00; /* Accent color for logo */
+    color: #ff8a00; 
     transition: color 0.3s ease;
 }
 
 .navbar .navbar-brand:hover {
-    color: #16f3e8; /* Hover effect color for logo */
+    color: #16f3e8; 
 }
 
 .navbar .nav-link {
     font-size: 1.1rem;
     color: #ffffff;
     transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
 }
 
 .navbar .nav-link:hover {
-    color: #ff8a00; /* Accent color for link hover */
+    color: #ff8a00; 
     text-decoration: underline;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 992px) {
     .navbar .navbar-nav {
         text-align: center;
         padding-top: 1rem;
     }
+    
+    .navbar .download-btn {
+        width: 100%; 
+        text-align: center;
+        margin: 1rem auto;
+    }
 }
 
-/* bootstrap navber */
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .navbar-nav {
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+    .navbar .download-btn {
+        font-size: 0.85rem;
+        padding: 8px 10px;
+    }
+}
+
+/* bootstrap navber end */
 
 
 
@@ -56,124 +85,6 @@ body{
 }
 .content-wrapper {
     flex: 1;
-}
-nav{
-    width: 100%;
-    height: 10vh;
-    position: sticky;
-}
-
-.nav-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo span{
-    color: #e08012;
-    text-shadow: 0 0 10px #e08012;
-}
-
-.hamburg,
-.cancel{
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: white;
-    display: none;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
-}
-
-.nav-container .links{
-    display: flex;
-    
-}
-
-.nav-container .links a{
-    position: relative;
-    font-size: 1.2rem;
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: 550;
-    transition: 0.3s linear;
-   
-   
-}
-.nav-container .links a::before{
-    position: absolute;
-    content: "";
-    bottom: -3px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #e08012;
-    transition: 0.2s linear;
-}
-
-.nav-container .links a:hover::before{
-    width: 100%;
-}
-
-.nav-container .links a:hover{
-    color: #e08012;
-}
-
-.dropdown{
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    transform: translateY(-500px);
-    width: 100%;
-    height: auto;
-    backdrop-filter: blur(4px) brightness(40%);
-    box-shadow:  0 0 20px black;
-    transition: 0.2s linear;
-}
-
-.dropdown .links a{
-    display: flex;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    padding: 15px 0;
-    align-items: center;
-    transition: 0.2s linear;
-}
-
-.dropdown .links a:hover{
-    background-color: #e08012;
-}
-.main-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.main-container .image{
-    width: 500px;
-    height: 80vh;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-.main-container .image img{
-    width: 100%;
-}
-
-.main-container .image:hover{
-    animation: animate 1.5s ease-in-out infinite;
 }
 
 @keyframes animate {
@@ -189,34 +100,58 @@ nav{
         scale: 1;
     }
 }
+
+
+
 /* hero section bootstrap */
+
 
 .hero-section h1 span {
     color: #ff8a00; /* Accent color for name */
     font-weight: bold;
+    text-align: left;
+}
+.hero-section p {
+    text-align: left;
+}
+.hero-section h6 {
+    text-align: left;
+    font-size: 20px;
+}
+.hero-section h1 {
+    text-align: left;
 }
 
 .typewriter {
-    font-size: 1.5rem;
+    font-size: 1.5rem;  /* Default font size */
     font-weight: bold;
+    display: inline-block;
+    min-width: 180px;    /* Reserve space for the text */
+    white-space: nowrap; /* Prevents line breaks within the typewriter text */
+    overflow: hidden;    /* Ensures any overflow text doesn't affect layout */
 }
+
+/* Responsive text size for typewriter effect */
+.typewriter-text {
+    font-size: clamp(1rem, 2.5vw + 1rem, 2rem); /* Responsive scaling from mobile to desktop */
+    font-weight: 500;
+    display: inline;
+    vertical-align: bottom; /* Aligns the text smoothly with the cursor */
+}
+
 .btn-hire-me {
-    padding: 8px 15px; /* Adjusted padding for reduced width */
+    padding: 8px 15px; 
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
     background: linear-gradient(90deg, #ff8a00, #ff3c00);
     border: none;
     border-radius: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 150px; /* Restrict the maximum width */
+    max-width: 150px;
 }
 
 .btn-hire-me:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.4);
     background: linear-gradient(90deg, #ff3c00, #ff8a00);
-    color: #fff;
 }
 
 .btn-hire-me i {
@@ -224,123 +159,11 @@ nav{
     font-size: 1rem;
 }
 
-
+/* Image Styling */
 .img-fluid {
     max-width: 80%;
     height: auto;
     border-radius: 20px;
-}
-/* hero section bootstrap end */
-
-
-
-.main-container .content{
-    color: white;
-    width: 40%;
-    min-height: 100px;
-}
-
-.content h1{
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
-}
-
-.content h1 span{
-    color: #e08012;
-    text-shadow: 0  0 10px #e08012;
-}
-
-.content .typewriter{
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
-    font-weight: 600;
-}
-
-.content .typewriter-text{
-    color: #e08012;
-    text-shadow: 0 0 10px #e08012;
-}
-
-.content p{
-    font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
-    margin: 10px 0;
-}
-
-.content button{
-    width: 80%;
-    height: 8vh;
-    margin-right: 30px;
-    background-color: #e08012;
-    color: white;
-    border: none;
-    outline: none;
-    font-size: 120%;
-    font-weight: 700;
-    border-radius: 5px;
-    transition: 0.2s linear;
-
-}
-
-.content button:hover{
-    scale: 1.1;
-    color: #e08012;
-    border: 2px solid #e08012;
-    background-color: transparent;
-    font-weight: 700;
-    box-shadow: 0 0 40px #e08012;
-}
-
-@media (max-width:884px) {
-    nav .logo{
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nav-container .links{
-        display: none;
-    }
-
-    .hamburg,
-    .cancel{
-        display: block;
-    }
-
-    .main-container .content{
-        width: 80%;
-    }
-
-    .social-links i{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-
-    .main-container .image{
-        z-index: -1;
-        width: 50%;
-        height: 60%;
-    }
-}
-
-@media (max-width:440px){
-    .main-container .image{
-        width: 50%;
-        height: 60%;
-        margin-bottom: 0px;
-    }
-
-    .main-container .content{
-        width: 80%;
-    }
-
-    .main-container button{
-        margin-top: 15px;
-    }
 }
 
 /* cv button design start */
@@ -357,8 +180,7 @@ nav{
     border: none;
     border-radius: 10px;
     text-decoration: none;
-    transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
   }
   
   /* Add icon spacing */
@@ -369,14 +191,12 @@ nav{
   
   /* Hover Effect */
   .download-btn:hover {
-    background: linear-gradient(135deg, #e08012, #e08012); /* Reverse gradient */
-    transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #e08012, #e08012);
   }
   
   /* Focus outline */
   .download-btn:focus {
-    /* outline: 2px solid #f23a13; */
+   
     outline: 2px solid #e08012;
   }
   
