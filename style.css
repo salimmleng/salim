@@ -549,7 +549,3 @@ body{
   color: #fff;
 
 }
-.row.g-1 {
-  --bs-gutter-x: 0rem; /* Adjust to reduce or increase horizontal space */
-  --bs-gutter-y: 0.25rem; /* Adjust to reduce or increase vertical space */
-}
