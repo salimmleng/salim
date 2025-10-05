@@ -12,7 +12,7 @@ function cancel(){
 
 const texts = [
     "A Python Developer",
-    "A Django Developer",
+    "An Odoo Developer",
     "A Software Developer"
 ]
 
