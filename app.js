@@ -13,7 +13,7 @@ function cancel(){
 const texts = [
     "A Python Developer",
     "An Odoo Developer",
-    "A Software Developer"
+    "An Odoo ERP Consultant"
 ]
 
 let speed  =100;
